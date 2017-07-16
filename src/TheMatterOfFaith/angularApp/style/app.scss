@@ -31,7 +31,7 @@ html {
 
             @media screen and (max-width: 991px) {
                 padding: 0 10%;
-                font-size:4em;
+                font-size: 4em;
             }
         }
 
@@ -50,19 +50,22 @@ html {
 
         section {
             position: relative;
-            padding-bottom: 75px;
-            margin-bottom: 75px;
+            padding-bottom: 50px;
 
-            &:after {
-                content: "";
-                position: absolute;
-                left: 50%;
-                bottom: -10px;
-                width: 20px;
-                height: 20px;
-                margin-left: -10px;
-                background: url(/assets/logo.svg) no-repeat;
-                background-size: 20px 20px;
+            & + section {
+                padding-top: 50px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 50%;
+                    top: -10px;
+                    width: 20px;
+                    height: 20px;
+                    margin-left: -10px;
+                    background: url(/assets/logo.svg) no-repeat;
+                    background-size: 20px 20px;
+                }
             }
         }
 
@@ -81,7 +84,7 @@ html {
 
             .navbar-toggle {
                 float: left;
-                margin: 3px 0 3px 15px;
+                margin: 3px 0 3px 5px;
 
                 .icon-bar {
                     background-color: #fff;
@@ -111,6 +114,10 @@ html {
                 position: absolute;
                 right: 0;
                 top: 0;
+
+                @media (min-width:768px) {
+                    margin-bottom:0;
+                }
 
                 li {
                     float: left;
