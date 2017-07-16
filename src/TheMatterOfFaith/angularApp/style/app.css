@@ -26,6 +26,9 @@ html {
     html body p {
       padding: 0 150px;
       font-family: 'Lora', sans-serif; }
+      @media screen and (max-width: 991px) {
+        html body p {
+          padding: 0 10%; } }
     html body section {
       position: relative;
       padding-bottom: 75px;
@@ -44,6 +47,15 @@ html {
       min-height: 40px;
       background: rgba(0, 0, 0, 0.8);
       border: none; }
+      html body .navbar .nav-container {
+        position: relative; }
+      html body .navbar .navbar-header {
+        height: 40px; }
+      html body .navbar .navbar-toggle {
+        float: left;
+        margin: 3px 0 3px 15px; }
+        html body .navbar .navbar-toggle .icon-bar {
+          background-color: #fff; }
       html body .navbar a {
         color: #ddd;
         text-shadow: none;
@@ -56,8 +68,10 @@ html {
           padding-top: 10px;
           padding-bottom: 10px; } }
       html body .navbar .social {
-        float: right;
-        margin: 0; }
+        float: none;
+        position: absolute;
+        right: 0;
+        top: 0; }
         html body .navbar .social li {
           float: left;
           list-style: none; }
